@@ -1,0 +1,33 @@
+<div class="padding" ng-controller="LearnMoreController">
+  <super-navbar>
+    <super-navbar-title ng-bind="navbarTitle"></super-navbar-title>
+  </super-navbar>
+
+  <h3>Working with AngularJS</h3>
+
+  <p>Angular also works great with Supersonic native components. The input field below will automatically update the navigation bar title.</p>
+
+  <div class="card padding">
+    <h4>Navigation Bar Title (Look Up!)</h4>
+    <label class="item item-input">
+      <input type="text" ng-model="navbarTitle">
+    </label>
+  </div>
+
+  <div>여기서부터 자세한 정보가 나오도록</div>
+
+  <div class="list card" ng-repeat="story in storiesObject">
+    <div class="item item-avatar">
+    </div>
+
+    <div class="item item-image">
+      <img ng-src="http://www.doresol.net:8000{{story.file.url}}">
+    </div>
+
+    <a class="item item-icon-left assertive" href="#">
+      <i class="icon super-music-note"></i>
+      Start listening
+    </a>
+  </div>
+
+</div>

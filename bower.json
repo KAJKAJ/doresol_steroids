@@ -1,0 +1,11 @@
+{
+  "name": "doresol_steroids",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "angular": "1.3.x",
+    "supersonic": "1.x",
+    "angularfire": "~0.9.0",
+    "moment": "~2.8.4"
+  }
+}

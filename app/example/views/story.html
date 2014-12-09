@@ -1,0 +1,21 @@
+<div class="padding" ng-controller="StoryController">
+  <div ng-repeat="story in storiesObject">
+    <div>
+      <img ng-src="{{hostUrl + story.file.url}}">
+      <p>
+        {{story.text.text|limitTo:100}} <span ng-if="story.text.text.length>100">...</span>
+      </p>
+    </div>
+    <div class="item tabs tabs-secondary tabs-icon-right">
+      <a class="tab-item"></a>
+      <a class="tab-item"></a>
+      <a class="tab-item dark" href="#">
+        <i class="icon ion-chatbox"></i>
+        댓글 {{objectSize(story.comments)}} 개
+      </a>                  
+    </div>
+    </div>
+
+  </div>
+
+</div>
